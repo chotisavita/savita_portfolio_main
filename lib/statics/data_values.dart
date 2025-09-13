@@ -40,7 +40,7 @@ class DataValues {
 
   static const String aboutMeTitle = 'About Myself';
   static const String aboutMeDescription =
-  'I am a passionate software developer with a focus on research and development. I craft innovative solutions, pushing technology\'s limits to make a positive impact. Embracing challenges, I stay updated with emerging trends and strive for excellence.';
+  'I am a passionate Flutter Developer with over 5 years of experience building scalable, high-performance mobile applications for Android, iOS, and the web.\n I love crafting innovative solutions and pushing technology’s limits to create a positive impact.\n My expertise includes Flutter & Dart, advanced state management (Bloc, Riverpod, Provider, GetX), API integration, real-time communication (WebRTC, sockets), CI/CD, and payment-gateway integrations \n thrive on R&D challenges, stay current with emerging trends, and enjoy mentoring teams while delivering end-to-end mobile solutions across fintech, gaming, and e-commerce domains.';
 
   static const String aboutMeFullNameTitle = 'Full Name';
   static const String aboutMeNwIDescription =
@@ -48,7 +48,7 @@ class DataValues {
 
   static const String aboutMeBiographyTitle = 'Background';
   static const String aboutMeBiographyDescription =
-      'Greetings! I am Savita Shukla, a dynamic software developer, and technical content writer, fueling the engines of progress with my boundless passion for research and development. This digital sanctuary stands as my personal website, a gateway to a meticulously curated trove of public information easily accessible to all who traverse the virtual realms. Embark on a transformative odyssey where innovation and enlightenment harmonize effortlessly, underscored by a profound dedication to research and development. Immerse yourself in the wealth of insights and discoveries that this avant-garde platform has to offer, as we collectively shape the future of technology and beyond. Welcome to the forefront of progress!';
+      'Greetings! I’m Savita Shukla, a dynamic software developer and lifelong learner, fueled by a boundless passion for research and development. Over the past five years, I’ve specialized in building scalable, high-performance mobile applications for Android, iOS, and the web using Flutter and Dart. My journey began during college, where I independently designed and developed my institution’s official website—an experience that sparked my love for crafting elegant digital solutions.\n As my career progressed, I grew into a Senior Mobile Developer and Team Lead, guiding a team of three junior developers. In this role I not only architected complex features—such as real-time communication using WebRTC and secure payment integrations—but also mentored my teammates, reviewing code, sharing best practices, and helping them build confidence as engineers. Leading a team taught me the value of collaboration, clear communication, and balancing technical depth with project timelines.';
 
   static const String aboutMeFullNameDescription = 'Savita Shukla';
   static const String aboutMeNwITitle = 'Name with Initials';
@@ -67,7 +67,7 @@ class DataValues {
   static const String aboutMeLocationDescription =
       '-98/10/1 Vittal Rao Nagar Madhapur Hyderabad - India';
   static const String aboutMeWorkDomainTitle = 'Working Domain';
-  static const String aboutMeWorkDomainDescription = '';
+  static const String aboutMeWorkDomainDescription = 'https://play.google.com/store/apps/details?id=com.kotak.neo';
   static const String aboutMeStudentTitle = 'Computing Student';
   static const String aboutMeStudentDescription =
       'I study computing technologies as a student by focusing on learning how computer systems work, from the physical (hardware) to the apps and programs (software) that users interact with, and I learn all about critical thinking, problem-solving, and analytical research, regardless of whether I apply all the computing principles to solve problems in scenarios.';
@@ -168,57 +168,80 @@ class DataValues {
   // Experience
   static const String experienceTitle = 'Experience';
   static const String experienceDescription =
-      'Since commencing my B.Tech in 2017, I embarked on a journey of continuous learning and practical application of knowledge across diverse domains. Venturing into the realm of freelance solution development, my passion for technology flourished, and I found myself enamored by various cutting-edge technologies. In my third year, I secured valuable industrial training, which further honed my skills. Now, having completed over two years of experience in the development field, I am eager to explore new horizons and make innovative strides in my career.';
+      'I began my B.Tech journey in 2017 and successfully graduated in 2020, laying a strong foundation in computer science and software development. '
+      'During college, I explored freelance solution development, which ignited my passion for building real-world applications. '
+      'In my third year, I gained valuable industrial training that sharpened my skills and exposed me to production-level projects. '
+      'Since graduating, I have accumulated over five years of professional experience as a Flutter developer, growing from a hands-on contributor to a Senior Mobile Developer and Team Lead. '
+      'I have led junior developers, delivered high-performance apps across fintech, gaming, and e-commerce, and continue to embrace new technologies to create impactful, innovative solutions.';
   static List<ExperienceInfoModel> experiences = [
     ExperienceInfoModel(
-        companyName: 'OnPassive Technologies Pvt Ltd',
-        description: '',
-        image: 'logo',
-        position: 'Flutter Developer',
-        gainSkills: ['RiverPod,Firebase', 'Flutter,Dart', 'Rest API','IOS','Project Management',"..."],
-        workingPeriod: 'Nov 2023 to Present',
+      companyName: 'Kotak Securities Pvt Ltd',
+      position: 'Mobile Application Developer',
+      workingPeriod: '14 June 2024 – Present',
+      image: 'logo_kotak',
+      gainSkills: [
+        'Flutter, Dart, BloC, Provider, Clean Architecture, GetIt',
+        'Web Socket & REST API Integration',
+        'Azure Services, Firebase Remote Config',
+        'CI/CD pipelines, Mixpanel & CleverTap Analytics',
+        'Performance optimization using isolates & WorkManager'
+      ],
+      description:
+      'Developed trading and investment features for the Kotak Neo app '
+          'with scalable architecture and real-time data using WebSockets. '
+          'Collaborated with Product, QA, and Backend teams for seamless feature delivery.',
     ),
+
+    ExperienceInfoModel(
+      companyName: 'OnPassive Technologies Pvt Ltd',
+      position: 'Mobile Developer (Team Leader)',
+      workingPeriod: '18 Nov 2023 – 13 June 2024',
+      image: 'logo_onpassive',
+      gainSkills: [
+        'Flutter, Dart, Provider, WebRTC, MediaSoup',
+        'Socket & REST API integrations',
+        'Advanced UI/UX design',
+        'Team leadership & project management'
+      ],
+      description:
+      'Led a team of 3 juniors to build “O-Connect,” a real-time video conferencing app '
+          'similar to Google Meet, featuring high-performance audio/video calls and '
+          'complex UI flows for smooth group meetings.',
+    ),
+
     ExperienceInfoModel(
       companyName: 'GMNG Entertainment Pvt Ltd',
-      description: '',
-      image: 'logo',
-      position: 'Software Developer(Hybrid app development)',
+      position: 'Sr. Mobile Application Developer',
+      workingPeriod: '22 June 2022 – 31 Aug 2023',
+      image: 'logo_gmng',
       gainSkills: [
-        'Flutter',
-        'Dart',
-        'Domain-Driven',
-        'Getx',
-        'IOS',
-        'Project Management',"..."
+        'Flutter, Dart, MVVM Architecture',
+        'REST API, GetX',
+        'Third-party SDK integrations (FreshChat, CleverTap, AppsFlyer)',
+        'Video ads monetization, Project ownership'
       ],
-      workingPeriod: '22 June 2022 to 31 Aug 2023',
+      description:
+      'Owned end-to-end development of the GMNG Pro app, ensuring scalability and performance. '
+          'Added LootBox feature and integrated analytics and user engagement tools.',
     ),
-    ExperienceInfoModel(
-      companyName: 'Dairy.com(Mr.MilkMan)',
-      description: '',
-      image: 'logo',
-      position: 'Senior Software Developer',
-      gainSkills: [
-        'Flutter Web',
-        'RxDart',
-        'Native Interface & Dynamic UI'
-      ],
-      workingPeriod: 'Dec 2020 to June 2022',
-    ),
-    ExperienceInfoModel(
-      companyName: 'Petro IT',
-      description: '',
-      image: 'logo',
-      position: 'Mobile Application Developer',
-      gainSkills:  [
 
-        'Plugins/Packages development',
-        'Advance Firebase',
-        'Local DB(Sqflite, Hive & Firebase)'
+    ExperienceInfoModel(
+      companyName: 'Dairy.com (Mr. MilkMan)',
+      position: 'Senior Software Developer',
+      workingPeriod: '14 Dec 2020 – 18 June 2022',
+      image: 'logo_dairy',
+      gainSkills: [
+        'Flutter, FlutterFlow, Riverpod',
+        'Dependency Injection',
+        'Unit Testing, E-commerce solutions'
       ],
-      workingPeriod: '17 Sep 2019 to Dec 2020',
+      description:
+      'Built e-commerce and subscription apps like Akshayakalpa Organic Milk and Bharati Agri, '
+          'focusing on clean, scalable architecture, real-time data integration, '
+          'and seamless delivery management.',
     ),
   ];
+
 
   // TechNotes
   static const String technotesTitle = 'Tech Notes & Books';
