@@ -122,26 +122,6 @@ class ContainerCard {
                     skillTitle,
                     skills,
                 )
-                // TextPairs().type2(
-                //   title: values[0],
-                //   value1: values[1],
-                //   value2: values[2],
-                //   isThreeLines: false,
-                // ),
-                // const SizedBox(height: 10.0),
-                // TextPairs().type2(
-                //   title: values[3],
-                //   value1: values[4],
-                //   value2: values[5],
-                //   isThreeLines: false,
-                // ),
-                // const SizedBox(height: 10.0),
-                // TextPairs().type2(
-                //   title: values[6],
-                //   value1: values[7],
-                //   value2: values[8],
-                //   isThreeLines: false,
-                // ),
               ],
             ),
             const SizedBox(height: 20.0),
