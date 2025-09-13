@@ -57,11 +57,11 @@ class ContainerCard {
             SelectableText(description,
                 style: AppThemeData.darkTheme.textTheme.labelLarge),
             const SizedBox(height: 20.0),
-            // ButtonTextSmall(
-            //   text: 'View More >>',
-            //   message: message,
-            //   url: url,
-            // ),
+            ButtonTextSmall(
+              text: 'View More >>',
+              message: message,
+              url: url,
+            ),
           ],
         ),
       ),
@@ -99,12 +99,6 @@ class ContainerCard {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                CircleAvatar(
-                  backgroundImage: getImage(image),
-                  radius: 40,
-                  backgroundColor: Colors.transparent,
-                ),
-                const SizedBox(height: 20.0),
                 SelectableText(title,
                     style: TextStyle(
                       fontSize: AppThemeData
@@ -196,12 +190,6 @@ class ContainerCard {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                CircleAvatar(
-                  backgroundImage: getImage(image),
-                  radius: 35,
-                  backgroundColor: Colors.transparent,
-                ),
-                const SizedBox(height: 20.0),
                 SelectableText(title,
                     style: TextStyle(
                       fontSize: AppThemeData
@@ -216,7 +204,7 @@ class ContainerCard {
                   title: role,
                   value1: years,
                   value2: values,
-                  isThreeLines: true,
+                  isThreeLines: false,
                 ),
                 if(skillTitle!=null && skills!=null)
                 skillsWidget(skillTitle, skills),
@@ -308,7 +296,6 @@ class ContainerCard {
             bottom: 10,
             top: 10,
           ),
-          height: 50,
           child:  Text(
               skills.joinToString(),
               style: ThemeData.dark().textTheme.bodySmall?.copyWith()

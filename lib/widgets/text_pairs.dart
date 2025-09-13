@@ -44,7 +44,7 @@ class TextPairs {
                   AppThemeData.darkTheme.textTheme.labelLarge!.fontWeight,
               color: AppThemeData.textGreyDark),
         ),
-        isThreeLines ? const SizedBox(height: 20.0) : Container(),
+        isThreeLines ? const SizedBox(height: 20.0) : const SizedBox.shrink(),
         SelectableText(
           value2,
           style: TextStyle(

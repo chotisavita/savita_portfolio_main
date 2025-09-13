@@ -27,7 +27,7 @@ class MS4Experience extends StatelessWidget {
             const SizedBox(height: 30.0),
             ...DataValues.experiences.map((e) =>
                 Container(
-                  width: (context.width*0.48),
+                  width: (context.width*0.38),
                   padding: const EdgeInsets.only(
                     top: 20,
                   ),
@@ -39,7 +39,7 @@ class MS4Experience extends StatelessWidget {
                     values: '',
                     message: e.description,
                     url: DataValues.linkedinURL,
-                    isButtonEnabled: false,
+                    isButtonEnabled: true,
                     skills: e.gainSkills,
                     skillTitle: 'Skills -',
                   ),

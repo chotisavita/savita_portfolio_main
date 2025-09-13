@@ -12,25 +12,32 @@ class DataValues {
 
   // External links
   static Uri devURL = Uri.parse('https://dev.to/savitashukla');
-  static Uri githubURL = Uri.parse('https://github.com/savitashukla?tab=repositories');
-  static Uri linkedinURL = Uri.parse('https://www.linkedin.com/in/savita-shukla/');
-  static Uri youtubeURL = Uri.parse('https://www.youtube.com/channel/UCUL4mvj_UDtnF8Tv2BoPPlw');
+  static Uri githubURL =
+      Uri.parse('https://github.com/savitashukla?tab=repositories');
+  static Uri linkedinURL =
+      Uri.parse('https://www.linkedin.com/in/savita-shukla/');
+  static Uri youtubeURL =
+      Uri.parse('https://www.youtube.com/channel/UCUL4mvj_UDtnF8Tv2BoPPlw');
 
   static Uri hashnodeURL = Uri.parse('https://hashnode.com/@savita208');
+  static Uri mediumURL = Uri.parse('https://medium.com/@shukla.savita208');
   static Uri repoURL =
-  Uri.parse('https://github.com/savitashukla?tab=repositories');
-  static Uri biographyURL = Uri.parse('');
-  static Uri profilesURL = Uri.parse('https://www.linkedin.com/in/savita-shukla/');
-  static Uri toolkitURL = Uri.parse('https://www.linkedin.com/in/savita-shukla/');
-  static Uri volunteeringURL =
-  Uri.parse('');
+      Uri.parse('https://github.com/savitashukla?tab=repositories');
+  static Uri biographyURL = Uri.parse(
+      'https://drive.google.com/file/d/1mXSpI6CpqgU5HBk7iJonhikvKY43BM8T/view?usp=sharing');
+  static Uri profilesURL =
+      Uri.parse('https://www.linkedin.com/in/savita-shukla/');
+  static Uri toolkitURL =
+      Uri.parse('https://www.linkedin.com/in/savita-shukla/');
+  static Uri volunteeringURL = Uri.parse('');
   static Uri technotesURL = Uri.parse('');
   static Uri lateNightStudentURL = Uri.parse('');
 
   // Header
   static const String headerGreetings = 'Hello, Universe! myself ';
   static const String headerName = 'Savita Shukla';
-  static const String headerTitle = 'Developer || Student || Technical Content Writer';
+  static const String headerTitle =
+      'Developer || Student || Technical Content Writer';
 
   static const String navBarAboutMe = 'About Myself';
   static const String navBarEducation = 'Academic Background';
@@ -40,11 +47,10 @@ class DataValues {
 
   static const String aboutMeTitle = 'About Myself';
   static const String aboutMeDescription =
-  'I am a passionate Flutter Developer with over 5 years of experience building scalable, high-performance mobile applications for Android, iOS, and the web.\n I love crafting innovative solutions and pushing technology’s limits to create a positive impact.\n My expertise includes Flutter & Dart, advanced state management (Bloc, Riverpod, Provider, GetX), API integration, real-time communication (WebRTC, sockets), CI/CD, and payment-gateway integrations \n thrive on R&D challenges, stay current with emerging trends, and enjoy mentoring teams while delivering end-to-end mobile solutions across fintech, gaming, and e-commerce domains.';
+      'I am a passionate Flutter Developer with over 5 years of experience building scalable, high-performance mobile applications for Android, iOS, and the web.\n I love crafting innovative solutions and pushing technology’s limits to create a positive impact.\n My expertise includes Flutter & Dart, advanced state management (Bloc, Riverpod, Provider, GetX), API integration, real-time communication (WebRTC, sockets), CI/CD, and payment-gateway integrations \n thrive on R&D challenges, stay current with emerging trends, and enjoy mentoring teams while delivering end-to-end mobile solutions across fintech, gaming, and e-commerce domains.';
 
   static const String aboutMeFullNameTitle = 'Full Name';
-  static const String aboutMeNwIDescription =
-      'Savita Shukla';
+  static const String aboutMeNwIDescription = 'Savita Shukla';
 
   static const String aboutMeBiographyTitle = 'Background';
   static const String aboutMeBiographyDescription =
@@ -67,7 +73,8 @@ class DataValues {
   static const String aboutMeLocationDescription =
       '-98/10/1 Vittal Rao Nagar Madhapur Hyderabad - India';
   static const String aboutMeWorkDomainTitle = 'Working Domain';
-  static const String aboutMeWorkDomainDescription = 'https://play.google.com/store/apps/details?id=com.kotak.neo';
+  static const String aboutMeWorkDomainDescription =
+      'https://play.google.com/store/apps/details?id=com.kotak.neo';
   static const String aboutMeStudentTitle = 'Computing Student';
   static const String aboutMeStudentDescription =
       'I study computing technologies as a student by focusing on learning how computer systems work, from the physical (hardware) to the apps and programs (software) that users interact with, and I learn all about critical thinking, problem-solving, and analytical research, regardless of whether I apply all the computing principles to solve problems in scenarios.';
@@ -80,7 +87,8 @@ class DataValues {
 
   static const String aboutMeHobbiesTitle = 'Hobbies';
 
-  static const String aboutMeHobbiesDescription = 'Learning New Things & Research\n'
+  static const String aboutMeHobbiesDescription =
+      'Learning New Things & Research\n'
       'Writing tech notes & e-book\n'
       'Watching Movies & TV Shows\n'
       'Cricket & Living in nature\n';
@@ -98,22 +106,22 @@ class DataValues {
       'My educational background is not specific in any particular way and has come from various places. In this section, you can find out about my formal and other sources from 2003 to now. So, here are my school, undergraduate institution, and other learning platforms that I\'ve been involving for education.';
   static List<CollegeInfoModel> educations = [
     CollegeInfoModel(
-        degreeName: "B.Tech(Computer Science & Eng.)",
-        collegeName: "Dr. A.P.J. Abdul Kalam Technical University",
-        description: "",
-        image: 'logo',
-        educationPeriod: "Jul 2017 - Jul 2020",
-        gainSkills:  [
-          'Programming',
-          'C',
-          'Java',
-          'Python',
-          'Web',
-          'Project Management',
-          'Resource Handling'
-        ],
-        other: '',
-        grade: 'A',
+      degreeName: "B.Tech(Computer Science & Eng.)",
+      collegeName: "Dr. A.P .J. Abdul Kalam Technical University",
+      description: "",
+      image: 'logo',
+      educationPeriod: "Jul 2017 - June 2020",
+      gainSkills: [
+        'Programming',
+        'C',
+        'Java',
+        'Python',
+        'Web',
+        'Project Management',
+        'Resource Handling'
+      ],
+      other: '',
+      grade: 'A',
     ),
     CollegeInfoModel(
       degreeName: "Diploma(Computer Science)",
@@ -153,13 +161,7 @@ class DataValues {
       description: "",
       image: 'logo',
       educationPeriod: "",
-      gainSkills: [
-        'Physics',
-        'Chemistry',
-        'Math',
-        'Social Science',
-        'English'
-      ],
+      gainSkills: ['Physics', 'Chemistry', 'Math', 'Social Science', 'English'],
       other: '',
       grade: 'A+',
     )
@@ -187,11 +189,10 @@ class DataValues {
         'Performance optimization using isolates & WorkManager'
       ],
       description:
-      'Developed trading and investment features for the Kotak Neo app '
+          'Developed trading and investment features for the Kotak Neo app '
           'with scalable architecture and real-time data using WebSockets. '
           'Collaborated with Product, QA, and Backend teams for seamless feature delivery.',
     ),
-
     ExperienceInfoModel(
       companyName: 'OnPassive Technologies Pvt Ltd',
       position: 'Mobile Developer (Team Leader)',
@@ -204,11 +205,10 @@ class DataValues {
         'Team leadership & project management'
       ],
       description:
-      'Led a team of 3 juniors to build “O-Connect,” a real-time video conferencing app '
+          'Led a team of 3 juniors to build “O-Connect,” a real-time video conferencing app '
           'similar to Google Meet, featuring high-performance audio/video calls and '
           'complex UI flows for smooth group meetings.',
     ),
-
     ExperienceInfoModel(
       companyName: 'GMNG Entertainment Pvt Ltd',
       position: 'Sr. Mobile Application Developer',
@@ -221,10 +221,9 @@ class DataValues {
         'Video ads monetization, Project ownership'
       ],
       description:
-      'Owned end-to-end development of the GMNG Pro app, ensuring scalability and performance. '
+          'Owned end-to-end development of the GMNG Pro app, ensuring scalability and performance. '
           'Added LootBox feature and integrated analytics and user engagement tools.',
     ),
-
     ExperienceInfoModel(
       companyName: 'Dairy.com (Mr. MilkMan)',
       position: 'Senior Software Developer',
@@ -236,65 +235,188 @@ class DataValues {
         'Unit Testing, E-commerce solutions'
       ],
       description:
-      'Built e-commerce and subscription apps like Akshayakalpa Organic Milk and Bharati Agri, '
+          'Built e-commerce and subscription apps like Akshayakalpa Organic Milk and Bharati Agri, '
           'focusing on clean, scalable architecture, real-time data integration, '
           'and seamless delivery management.',
     ),
   ];
-
-
-  // TechNotes
-  static const String technotesTitle = 'Tech Notes & Books';
-  static const String technotesDescription = 'Myself is a prolific writer with an extensive portfolio of articles and books. His works encompass diverse topics, reflecting his profound expertise and knowledge. Through insightful articles and thought-provoking books, he leaves a lasting impact on readers across various fields.';
-
+  static const String technotesTitle = 'Articles & Tech Insights';
+  static const String technotesDescription =
+      'Explore my collection of in-depth articles, tutorials, and technical write-ups covering Flutter, mobile development, and modern software architecture. '
+      'I share hands-on guides, real-world implementations, and best practices aimed at helping developers build scalable, high-performance apps.';
   static List<ArticleModel> articles = [
     ArticleModel(
-        publishYear: "Jan 2023",
-        role: "Senior Flutter Developer",
-        title: "Flutter-zero-to-hero-2023",
-        content: "Looking to learn Flutter from scratch? Look no further than “Flutter Zero to Hero — 2023” by Savita Shukla. This comprehensive guide is perfect for beginners who want to learn the fundamentals of Dart programming and the Flutter framework. \nHere’s what you’ll find inside:",
-        url: "https://amzn.eu/d/iZGmss8",
-        image: "https://miro.medium.com/v2/resize:fit:624/format:webp/0*7d8fIjw17YOCrew2.png",
+      publishYear: "Jan 2024",
+      role: "Author",
+      title: "Basics to Expert Level in Flutter",
+      content:
+          "A 35-minute comprehensive Flutter guide that takes you from beginner to expert.",
+      url: "https://your-link-to-flutter-expert",
+      image: "assets/images/flutter_expert.png",
     ),
     ArticleModel(
-      publishYear: "Apr 2023",
-      role: "Senior Software Developer",
-      title: "Python-Zero-to-Hero-Edition-2023",
-      content: "Python Zero to Hero Edition 2023 is a comprehensive guide to learning Python, authored by Savita Shukla, a seasoned software developer and data scientist. This e-book covers everything you need to know to become proficient in Python, from basic syntax and data types to advanced topics like multithreading and multiprocessing.",
-      url: "https://amzn.eu/d/4GdgSVY",
-      image: "https://m.media-amazon.com/images/I/31opbfmDwWL._SL500_.jpg",
+      publishYear: "Mar 2024",
+      role: "Author",
+      title: "Clean Architecture in Flutter",
+      content:
+          "Design robust Flutter apps using Clean Architecture principles and patterns.",
+      url: "https://your-link-to-clean-architecture",
+      image: "assets/images/clean_architecture.png",
     ),
     ArticleModel(
-      publishYear: "Nov 2022",
-      role: "Senior Flutter Developer",
-      title: "Go Router in Flutter ",
-      content: "What is Go Router? \n A declarative routing package for Flutter that uses the Router API to provide a convenient, URL-based API for navigating between different screens. You can define URL patterns, navigate using a URL, handle deep links, and a number of other navigation-related scenarios.",
-      url: "https://medium.com/@subhashchandrashukla/what-is-go-router-in-flutter-a1fb27f73d19",
-      image: "https://miro.medium.com/v2/resize:fit:1400/1*vaz0ZfwZ5xqG_xfibu4FrQ.gif",
+      publishYear: "Feb 2024",
+      role: "Author",
+      title: "Riverpod",
+      content:
+          "Leverage Riverpod for modern, testable state management in Flutter.",
+      url: "https://your-link-to-riverpod",
+      image: "assets/images/riverpod.png",
+    ),
+    ArticleModel(
+      publishYear: "Apr 2024",
+      role: "Author",
+      title: "Main Android Components",
+      content:
+          "An overview of core Android components every Flutter developer should know.",
+      url: "https://your-link-to-android-components",
+      image: "assets/images/android_components.png",
+    ),
+    ArticleModel(
+      publishYear: "Mar 2023",
+      role: "Author",
+      title: "Cash Free Payment Gateway",
+      content:
+          "A concise guide explaining how to integrate the Cashfree payment gateway "
+          "into Flutter apps with easy-to-follow implementation steps.",
+      url:
+          "https://medium.com/@shukla.savita208/cash-free-payment-gateway-56cf65cf2774",
+      image:
+          "assets/images/cashfree_payment.png", // replace with your asset path or a direct image URL
     ),
     ArticleModel(
       publishYear: "Jan 2023",
-      role: "Senior Flutter Developer",
-      title: "Flutter State Management in PRO (2023)",
-      content: "What is State?\n In the software development world, the state is the information you required to rebuild your UI at any moment.",
-      url: "https://medium.com/@subhashchandrashukla/flutter-state-management-in-pro-4b6c2ff72d9b",
-      image: "https://miro.medium.com/v2/resize:fit:720/format:webp/1*1089J-rIzqWbZf48q9RL2w.png",
+      role: "Author",
+      title: "Video Call Using Zegocloud",
+      content:
+          "Step-by-step guide to implement video calling in Flutter using Zegocloud, "
+          "covering both one-to-one and group call setups.",
+      url:
+          "https://medium.com/@shukla.savita208/video-call-using-zegocloud-e36fca1c5138",
+      image:
+          "assets/images/zegocloud_video_call.png", // replace with your actual asset path or a direct image URL
     ),
     ArticleModel(
-      publishYear: "March 2023",
-      role: "Senior Flutter Developer",
-      title: "The Model-View-ViewModel (MVVM) pattern in flutter",
-      content: "Flutter MVVM (Model-View-ViewModel) is an architectural pattern that is used to separate the user interface (View) from the business logic and data (Model) of an application, while also providing a clear separation of concerns. Here’s how you can implement the MVVM pattern in Flutter:",
-      url: "https://medium.com/@subhashchandrashukla/the-model-view-viewmodel-mvvm-in-flutter-pattern-8bcd002a3e9f",
-      image: "https://miro.medium.com/v2/resize:fit:828/format:webp/1*4Aru5Uz0c5AWnGbKEzZfiQ.png",
+      publishYear: "Dec 2024",
+      role: "Author",
+      title: "Rich Notification Using CleverTap",
+      content:
+          "Integrate CleverTap to send rich, engaging notifications in Flutter apps.",
+      url: "https://your-link-to-rich-notification",
+      image: "assets/images/clevertap_notification.png",
     ),
     ArticleModel(
-      publishYear: "March 2023",
-      role: "Senior Flutter Developer",
-      title: "The Model-View-Controller (MVC) pattern in Flutter",
-      content: "The Model-View-Controller (MVC) pattern is not built into Flutter, but it can be implemented using various architectural patterns. Here’s an example of how you can implement the MVC pattern in Flutter:",
-      url: "https://medium.com/@subhashchandrashukla/the-model-view-controller-mvc-pattern-in-flutter-16d4b0129e79",
-      image: "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*Uy08dfkLZn1Z9cEO--uzwQ.png",
+      publishYear: "May 2024",
+      role: "Author",
+      title: "Flutter Integration Testing (Automation)",
+      content:
+          "A step-by-step guide to writing integration tests to automate Flutter app testing.",
+      url: "https://your-link-to-integration-testing",
+      image: "assets/images/integration_testing.png",
+    ),
+    ArticleModel(
+      publishYear: "Apr 2024",
+      role: "Author",
+      title: "Google Login with Firebase",
+      content:
+          "Implement Google Sign-In with Firebase authentication in Flutter applications.",
+      url: "https://your-link-to-google-login",
+      image: "assets/images/google_login.png",
+    ),
+    ArticleModel(
+      publishYear: "Apr 2024",
+      role: "Author",
+      title: "Bloc",
+      content:
+          "Master the Bloc state management pattern to build scalable Flutter apps.",
+      url: "https://your-link-to-bloc",
+      image: "assets/images/bloc.png",
+    ),
+    ArticleModel(
+      publishYear: "Apr 2024",
+      role: "Author",
+      title: "Provider",
+      content:
+          "An in-depth guide to state management with Provider in Flutter.",
+      url: "https://your-link-to-provider",
+      image: "assets/images/provider.png",
+    ),
+    ArticleModel(
+      publishYear: "May 2024",
+      role: "Author",
+      title: "Detect Device Shake in Flutter",
+      content:
+          "Implement device shake detection in Flutter for interactive and fun user experiences.",
+      url: "https://your-link-to-detect-shake",
+      image: "assets/images/device_shake.png",
+    ),
+    ArticleModel(
+      publishYear: "Mar 2024",
+      role: "Author",
+      title: "API Call Using Retrofit",
+      content: "Make efficient API calls in Flutter with Retrofit and Dio.",
+      url: "https://your-link-to-retrofit",
+      image: "assets/images/retrofit.png",
+    ),
+    ArticleModel(
+      publishYear: "Feb 2024",
+      role: "Author",
+      title: "CustomPainter",
+      content:
+          "Create custom shapes and animations using Flutter’s CustomPainter.",
+      url: "https://your-link-to-custompainter",
+      image: "assets/images/custompainter.png",
+    ),
+    ArticleModel(
+      publishYear: "Feb 2024",
+      role: "Author",
+      title: "Socket",
+      content: "Implement real-time communication in Flutter using sockets.",
+      url: "https://your-link-to-socket",
+      image: "assets/images/socket.png",
+    ),
+    ArticleModel(
+      publishYear: "Sep 2023",
+      role: "Author",
+      title: "Firebase Real Time Database",
+      content:
+          "Integrate and use Firebase Realtime Database with Flutter apps.",
+      url: "https://your-link-to-firebase-db",
+      image: "assets/images/firebase_db.png",
+    ),
+    ArticleModel(
+      publishYear: "Feb 2024",
+      role: "Author",
+      title: "Web Application Deployment",
+      content: "Step-by-step process to deploy your Flutter web application.",
+      url: "https://your-link-to-web-deployment",
+      image: "assets/images/web_deployment.png",
+    ),
+    ArticleModel(
+      publishYear: "Feb 2024",
+      role: "Author",
+      title: "Generic UI using Mock Data",
+      content:
+          "Build flexible UI prototypes using mock data for faster Flutter development.",
+      url: "https://your-link-to-generic-ui",
+      image: "assets/images/generic_ui.png",
+    ),
+    ArticleModel(
+      publishYear: "Dec 2023",
+      role: "Author",
+      title: "Collection in Dart",
+      content: "Understand Dart collections and how to use them effectively.",
+      url: "https://your-link-to-dart-collection",
+      image: "assets/images/dart_collection.png",
     ),
   ];
 
@@ -312,7 +434,7 @@ class DataValues {
   static const String builtWith = "Built with Flutter and GitHub Pages.";
 }
 
-class ArticleModel{
+class ArticleModel {
   final String title;
   final String content;
   final String url;
@@ -330,7 +452,7 @@ class ArticleModel{
   });
 }
 
-class CollegeInfoModel{
+class CollegeInfoModel {
   final String degreeName;
   final String collegeName;
   final String description;
@@ -352,7 +474,7 @@ class CollegeInfoModel{
   });
 }
 
-class ExperienceInfoModel{
+class ExperienceInfoModel {
   final String companyName;
   final String description;
   final List<String> gainSkills;

@@ -7,16 +7,15 @@ import '../landing/widgets/delayed_widget.dart';
 import '../landing/widgets/social_media_buttons.dart';
 import '../statics/data_values.dart';
 
-
 const dividerColor = Color(0xFF464751);
 
 class LandingHeader extends StatelessWidget {
   final ScrollController scrollController;
 
   const LandingHeader(
-      this.scrollController, {
-        super.key,
-      });
+    this.scrollController, {
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -39,14 +38,6 @@ class LandingHeader extends StatelessWidget {
   }
 
   Widget _buildSurface(BuildContext context) {
-    // Altough the "responsive_framework" package handles most of the
-    // responsiveness-related stuff for us, we need some cusotm styling based on
-    // the current view whether it is mobile, tablet or desktop.
-    //
-    // At that moment, ResponsiveValue<T> comes very handy and I've added some
-    // BuildContext extensions to it.
-
-    // Title text size: when Tablet and Mobile = 24, when Desktop = 40
     final titleSize = ResponsiveValue<double>(
       context,
       defaultValue: 24.0,
@@ -56,17 +47,6 @@ class LandingHeader extends StatelessWidget {
       ],
     ).value;
 
-    // Logo size: when Tablet and Mobile = 56, when Desktop = 64
-    final logoSize = ResponsiveValue<double>(
-      context,
-      defaultValue: 80.0,
-      valueWhen: [
-        const Condition.equals(name: TABLET, value: 106.0),
-        const Condition.largerThan(name: TABLET, value: 120.0),
-      ],
-    ).value;
-
-    // Motto text size: when Tablet and Mobile = 14, when Desktop = 16
     final mottoSize = ResponsiveValue<double>(
       context,
       defaultValue: 14.0,
@@ -76,10 +56,9 @@ class LandingHeader extends StatelessWidget {
       ],
     ).value;
 
-    // Motto text alignment: when Desktop = start, when Mobile and Tablet = center.
-    final mottoTextAlignment = context.isDesktop ? TextAlign.start : TextAlign.center;
+    final mottoTextAlignment =
+        context.isDesktop ? TextAlign.start : TextAlign.center;
 
-    // Max width of centered view when Mobile = 602, Tablet = 800, when Desktop = 1200
     final maxWidth = ResponsiveValue<double>(
       context,
       defaultValue: 602.0,
@@ -102,20 +81,12 @@ class LandingHeader extends StatelessWidget {
           Row(
             mainAxisSize: MainAxisSize.min,
             children: [
-              // Personal logo
               const CircleAvatar(
-                // child: Image.asset(
-                //   'assets/images/logo.jpeg',
-                //   // placeholder: 'assets/images/me.jpg',
-                //   height: logoSize,
-                //   width: logoSize,
-                // ),
                 radius: 75,
                 backgroundImage: AssetImage('assets/images/logo.jpeg'),
                 backgroundColor: Colors.transparent,
               ),
               const SizedBox(width: 12.0),
-
               Expanded(
                 child: DelayedWidget(
                   delayDuration: const Duration(milliseconds: 1000),
@@ -124,7 +95,7 @@ class LandingHeader extends StatelessWidget {
                     TextSpan(
                       children: [
                         TextSpan(
-                            text:'${DataValues.headerGreetings}\n',
+                          text: '${DataValues.headerGreetings}\n',
                           style: TextStyle(
                             fontSize: ((titleSize ?? 30) - 10),
                             fontWeight: FontWeight.bold,
@@ -157,8 +128,6 @@ class LandingHeader extends StatelessWidget {
             ],
           ),
           const SizedBox(height: 22.0),
-
-          // Divider between
           const DelayedWidget(
             delayDuration: Duration(milliseconds: 1400),
             from: DelayFrom.top,
@@ -168,8 +137,6 @@ class LandingHeader extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 30.0),
-
-          // Text: "FLUTTER BY DAY, FLUTTER BY NIGHT (INCLUDING WEEKENDS)"
           DelayedWidget(
             delayDuration: const Duration(milliseconds: 1500),
             from: DelayFrom.top,
@@ -186,8 +153,6 @@ class LandingHeader extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 40.0),
-
-          // Obvious from its name :)
           const SocialMediaButtons()
         ],
       ),

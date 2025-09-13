@@ -17,7 +17,7 @@ class DS4Experience extends StatelessWidget {
       key: KeyHolders.experienceKey,
       color: AppThemeData.backgroundGrey,
       child: Padding(
-        padding: const EdgeInsets.all(40.0),
+        padding: const EdgeInsets.only(left: 40,right: 40,bottom: 40,top: 5),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -33,7 +33,7 @@ class DS4Experience extends StatelessWidget {
                 children: [
                   ...DataValues.experiences.map((e) =>
                       Container(
-                        width: (context.width*0.48),
+                        width: (context.width*0.38),
                         padding: const EdgeInsets.only(
                           left: 10,right: 10,
                         ),
@@ -45,7 +45,7 @@ class DS4Experience extends StatelessWidget {
                           values: '',
                           message: e.description,
                           url: DataValues.linkedinURL,
-                          isButtonEnabled: false,
+                          isButtonEnabled: true,
                           skills: e.gainSkills,
                           skillTitle: 'Skills -',
                         ),

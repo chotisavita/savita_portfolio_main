@@ -41,7 +41,7 @@ class ButtonTextSmall extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Tooltip(
-      message: message,
+      message: message.length > 70 ? '${message.substring(0, 70)}…' : message,
       child: MouseRegion(
         cursor: SystemMouseCursors.click,
         child: GestureDetector(
@@ -54,9 +54,18 @@ class ButtonTextSmall extends StatelessWidget {
             }
             log("Direct to: $url");
           },
-          child: Text(
-            text,
-            style: Theme.of(context).textTheme.labelMedium,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                message,
+                style: Theme.of(context).textTheme.bodySmall,
+              ),
+              Text(
+                text,
+                style: Theme.of(context).textTheme.labelMedium,
+              ),
+            ],
           ),
         ),
       ),

@@ -5,13 +5,13 @@ import 'package:savita_portfolio_main/landing/widgets/social_media_button.dart';
 
 import '../../statics/data_values.dart';
 
-
 class SocialMediaButtons extends StatelessWidget {
   const SocialMediaButtons({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final alignment = context.isDesktop ? WrapAlignment.start : WrapAlignment.center;
+    final alignment =
+        context.isDesktop ? WrapAlignment.start : WrapAlignment.center;
     final wrapAlignment = context.isMobile ? Alignment.center : null;
 
     return Container(
@@ -22,16 +22,6 @@ class SocialMediaButtons extends StatelessWidget {
         alignment: alignment,
         children: [
           SocialMediaButton(
-          index: 0,
-              url: DataValues.devURL,
-           iconData: FontAwesomeIcons.dev,
-          ),
-          SocialMediaButton(
-          index: 1,
-              url: DataValues.hashnodeURL,
-            iconData: FontAwesomeIcons.hashnode,
-          ),
-          SocialMediaButton(
             index: 2,
             url: DataValues.githubURL,
             iconData: FontAwesomeIcons.github,
@@ -40,6 +30,21 @@ class SocialMediaButtons extends StatelessWidget {
             index: 3,
             url: DataValues.linkedinURL,
             iconData: FontAwesomeIcons.linkedin,
+          ),
+          SocialMediaButton(
+            index: 1,
+            url: DataValues.mediumURL,
+            iconData: FontAwesomeIcons.medium,
+          ),
+          SocialMediaButton(
+            index: 0,
+            url: DataValues.devURL,
+            iconData: FontAwesomeIcons.dev,
+          ),
+          SocialMediaButton(
+            index: 1,
+            url: DataValues.hashnodeURL,
+            iconData: FontAwesomeIcons.hashnode,
           ),
           SocialMediaButton(
             index: 4,

@@ -5,7 +5,6 @@ import '../statics/data_values.dart';
 import '../theme/app_theme.dart';
 import '../widgets/button_text.dart';
 import '../widgets/text_pairs.dart';
-import '../widgets/container_card.dart';
 import '../widgets/container_banner.dart';
 import '../widgets/frame_title.dart';
 

@@ -14,26 +14,27 @@ class DS6TechNotes extends StatelessWidget {
     return Container(
       key: KeyHolders.technotesKey,
       color: AppThemeData.backgroundGrey,
-      child: const Padding(
+      child: Padding(
         padding: EdgeInsets.all(40.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FrameTitle(
-                title: DataValues.technotesTitle,
-                description: DataValues.technotesDescription,
+            const FrameTitle(
+              title: DataValues.technotesTitle,
+              description: DataValues.technotesDescription,
             ),
-      /*      SingleChildScrollView(
+            SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
-                  children: [
-                    ...DataValues.articles.map((e) =>
-                        Container(
+                children: [
+                  ...DataValues.articles
+                      .map(
+                        (e) => Container(
                           padding: const EdgeInsets.only(
                             left: 10,
                             right: 10,
                           ),
-                          width: (context.width*0.47),
+                          width: (context.width * 0.47),
                           child: ContainerCard().type3(
                             image: e.image,
                             title: e.title,
@@ -45,42 +46,12 @@ class DS6TechNotes extends StatelessWidget {
                             isButtonEnabled: true,
                           ),
                         ),
-                    ).toList(),
-                  ],
+                      )
+                      .toList(),
+                ],
               ),
-            ),*/
-            // SingleChildScrollView(
-            //   physics: const BouncingScrollPhysics(),
-            //   scrollDirection: Axis.horizontal,
-            //   child: Row(
-            //     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            //     crossAxisAlignment: CrossAxisAlignment.start,
-            //     children: [
-            //       ...DataValues.articles.map((e) =>
-            //           Padding(
-            //             padding: const EdgeInsets.only(
-            //               left: 10,
-            //               right: 10,
-            //             ),
-            //             child:  SizedBox(
-            //               width: (context.width*0.47),
-            //               child: ContainerCard().type3(
-            //                 image: e.image,
-            //                 title: e.title,
-            //                 role: e.role,
-            //                 years: e.publishYear,
-            //                 values: e.content,
-            //                 message: e.content,
-            //                 url: Uri.tryParse(e.url),
-            //                 isButtonEnabled: true,
-            //               ),
-            //             ),
-            //           ),
-            //       ).toList(),
-            //     ],
-            //   ),
-            // ),
-            SizedBox(height: 40.0),
+            ),
+            const SizedBox(height: 40.0),
           ],
         ),
       ),
